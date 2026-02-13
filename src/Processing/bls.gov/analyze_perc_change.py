@@ -1,0 +1,50 @@
+import pandas as pd
+from pathlib import Path
+import os
+
+
+script_dir = Path(__file__).parent.resolve()
+fn = (script_dir / '../../../data/bls.gov/employment/01.csv').resolve()
+df = pd.read_csv(fn, delimiter='\t')
+head, tail = os.path.split(fn)
+fn_out = os.path.join(head, '01_5yr_perc_change.csv')
+
+
+#print(df.columns)
+
+#exit()
+
+percent_change_array = []
+area_set = set(df.area)
+for _area in area_set:
+    sub_set = df[df.area == _area]
+    min_year = sub_set.year.min()
+    max_year = sub_set.year.max()
+
+    year_spans = [span for y in range(max_year, min_year - 1, -5)
+                  if len(span := list(range(y, max(y - 5, min_year - 1), -1))) == 5]
+
+    for span in year_spans:
+        state = sub_set.iloc[1].state
+        area = _area
+        new_year = span[0]
+        old_year = span[-1]
+
+        new_number = sub_set[sub_set.year == new_year].iloc[0].value
+        old_number = sub_set[sub_set.year == old_year].iloc[0].value
+        
+        perc_change = (new_number - old_number) / old_number
+        #print('-'*13)
+        #print(state, area)
+        #print(new_year, old_year)
+        #print(new_number, old_number, perc_change)
+
+        percent_change_array.append([state, area, old_year, new_year, old_number, new_number, perc_change])
+
+
+new_df = pd.DataFrame(percent_change_array)
+new_df.columns = ['state', 'area', 'old_year', 'new_year', 'old_number', 'new_number', 'perc_change']
+print(new_df.head())
+print(new_df.shape)
+new_df.to_csv(fn_out)
+    #print(_state, sub_set.shape)
