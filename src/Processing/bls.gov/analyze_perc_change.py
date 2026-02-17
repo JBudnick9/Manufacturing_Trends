@@ -4,15 +4,12 @@ import os
 
 
 script_dir = Path(__file__).parent.resolve()
-fn = (script_dir / '../../../data/bls.gov/employment/01.csv').resolve()
+fn = (script_dir / '../../../data/bls.gov/employment/raw/01.csv').resolve()
 df = pd.read_csv(fn, delimiter='\t')
-head, tail = os.path.split(fn)
-fn_out = os.path.join(head, '01_5yr_perc_change.csv')
+fn_out = (script_dir / '../../../data/bls.gov/employment/processed/01_5yr_perc_change.csv')
+dir_processed, tail = os.path.split(fn_out)
+os.makedirs(dir_processed, exist_ok=True)
 
-
-#print(df.columns)
-
-#exit()
 
 percent_change_array = []
 area_set = set(df.area)

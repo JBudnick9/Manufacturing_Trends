@@ -224,7 +224,7 @@ class StateEmployment:
 
 if __name__ == '__main__':
     script_dir = Path(__file__).parent.resolve()
-    DATA_OUT_DIR = (script_dir / '../../../../data/bls.gov/employment/raw2').resolve()
+    DATA_OUT_DIR = (script_dir / '../../../../data/bls.gov/employment/raw').resolve()
     os.makedirs(DATA_OUT_DIR, exist_ok=True)
     data_types = ['01', '03', '06', '07', '08', '30']
 
