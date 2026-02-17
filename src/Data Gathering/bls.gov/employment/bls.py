@@ -1,9 +1,9 @@
 
 import requests
 import pandas as pd
-import pickle
 import time
 import os
+from pathlib import Path
 
 
 class StateEmployment:
@@ -223,7 +223,8 @@ class StateEmployment:
 
 
 if __name__ == '__main__':
-    DATA_OUT_DIR = "../../../../data/bls.gov/employment"
+    script_dir = Path(__file__).parent.resolve()
+    DATA_OUT_DIR = (script_dir / '../../../../data/bls.gov/employment/raw2').resolve()
     os.makedirs(DATA_OUT_DIR, exist_ok=True)
     data_types = ['01', '03', '06', '07', '08', '30']
 
