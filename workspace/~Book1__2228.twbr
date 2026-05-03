@@ -884,6 +884,103 @@
         </objects>
       </object-graph>
     </datasource>
+    <datasource caption='robotics_ce_by_state_2022_adjusted' inline='true' name='federated.1pvby0l0aswnpa170m7do0fi0tgh' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='robotics_ce_by_state_2022_adjusted' name='textscan.1k3wzws0lhjw6913z9l0i05zklsg'>
+            <connection class='textscan' directory='C:/Users/student/Desktop/Manufacturing_Trends/data/census.gov/processed' filename='robotics_ce_by_state_2022_adjusted.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1k3wzws0lhjw6913z9l0i05zklsg' name='robotics_ce_by_state_2022_adjusted.csv' table='[robotics_ce_by_state_2022_adjusted#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='State' ordinal='0' />
+            <column datatype='real' name='2022_Robotics_CE' ordinal='1' />
+            <column datatype='real' name='CE_adjusted' ordinal='2' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[robotics_ce_by_state_2022_adjusted.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[robotics_ce_by_state_2022_adjusted.csv]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[robotics_ce_by_state_2022_adjusted.csv_3AEE394497234BCA820567D11574950D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2022_Robotics_CE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[2022_Robotics_CE]</local-name>
+            <parent-name>[robotics_ce_by_state_2022_adjusted.csv]</parent-name>
+            <remote-alias>2022_Robotics_CE</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[robotics_ce_by_state_2022_adjusted.csv_3AEE394497234BCA820567D11574950D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CE_adjusted</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CE_adjusted]</local-name>
+            <parent-name>[robotics_ce_by_state_2022_adjusted.csv]</parent-name>
+            <remote-alias>CE_adjusted</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[robotics_ce_by_state_2022_adjusted.csv_3AEE394497234BCA820567D11574950D]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='2022 Robotics CE' datatype='real' name='[2022_Robotics_CE]' role='measure' type='quantitative' />
+      <column caption='CE adjusted' datatype='real' name='[CE_adjusted]' role='measure' type='quantitative' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='robotics_ce_by_state_2022_adjusted.csv' datatype='table' name='[__tableau_internal_object_id__].[robotics_ce_by_state_2022_adjusted.csv_3AEE394497234BCA820567D11574950D]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='robotics_ce_by_state_2022_adjusted.csv' id='robotics_ce_by_state_2022_adjusted.csv_3AEE394497234BCA820567D11574950D'>
+            <properties context=''>
+              <relation connection='textscan.1k3wzws0lhjw6913z9l0i05zklsg' name='robotics_ce_by_state_2022_adjusted.csv' table='[robotics_ce_by_state_2022_adjusted#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='State' ordinal='0' />
+                  <column datatype='real' name='2022_Robotics_CE' ordinal='1' />
+                  <column datatype='real' name='CE_adjusted' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
   </datasources>
   <datasource-relationships>
     <datasource-dependencies datasource='federated.0y97ps01tem7hs1a13wej012la48'>
@@ -928,6 +1025,10 @@
       <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
       <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
     </datasource-dependencies>
+    <datasource-dependencies datasource='federated.1pvby0l0aswnpa170m7do0fi0tgh'>
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+    </datasource-dependencies>
     <datasource-relationship source='federated.1aejyu41i23du318qbijk1tp7z13' target='federated.0y97ps01tem7hs1a13wej012la48'>
       <column-mapping />
     </datasource-relationship>
@@ -954,6 +1055,11 @@
     <datasource-relationship source='federated.1ja39a11u7ykt71050kxl1i4v24h' target='federated.1aejyu41i23du318qbijk1tp7z13'>
       <column-mapping>
         <map key='[federated.1ja39a11u7ykt71050kxl1i4v24h].[none:state:nk]' value='[federated.1aejyu41i23du318qbijk1tp7z13].[none:Geographic Area Name:nk]' />
+      </column-mapping>
+    </datasource-relationship>
+    <datasource-relationship source='federated.1pvby0l0aswnpa170m7do0fi0tgh' target='federated.1f7qjfb0u5w65p1c1ci6205op8st'>
+      <column-mapping>
+        <map key='[federated.1pvby0l0aswnpa170m7do0fi0tgh].[none:State:nk]' value='[federated.1f7qjfb0u5w65p1c1ci6205op8st].[none:state:nk]' />
       </column-mapping>
     </datasource-relationship>
   </datasource-relationships>
@@ -1478,6 +1584,70 @@
       </table>
       <simple-id uuid='{CF42F595-DC94-42C6-9CA1-CD243084C136}' />
     </worksheet>
+    <worksheet name='Investment by Employment (2)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Investment by Employment</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='01_employment_per_capita_2020-2025' name='federated.1ja39a11u7ykt71050kxl1i4v24h' />
+            <datasource caption='robotics_ce_by_state_2022' name='federated.1aejyu41i23du318qbijk1tp7z13' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1aejyu41i23du318qbijk1tp7z13'>
+            <column datatype='integer' name='[2022 Capital Expenditures for Industrial Robotic Equipment __($1000)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Geographic Area Name]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[2022 Capital Expenditures for Industrial Robotic Equipment __($1000)]' derivation='Sum' name='[diff:sum:2022 Capital Expenditures for Industrial Robotic Equipment __($1000):qk]' pivot='key' type='quantitative'>
+              <table-calc diff-options='Relative' ordering-type='Rows' type='Difference'>
+                <address>
+                  <value>-1</value>
+                </address>
+              </table-calc>
+            </column-instance>
+            <column-instance column='[Geographic Area Name]' derivation='None' name='[none:Geographic Area Name:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1ja39a11u7ykt71050kxl1i4v24h'>
+            <column caption='Sum(2022 SUM([robotics_ce_by_state_2022].[2022 Capital Expend...' datatype='real' name='[Calculation_0153173415247874]' role='measure' type='quantitative' user:unnamed='Investment by Employment (2)'>
+              <calculation class='tableau' formula='Sum(2022 SUM([federated.1aejyu41i23du318qbijk1tp7z13].[2022 Capital Expenditures for Industrial Robotic Equipment __($1000)])/' />
+            </column>
+            <column-instance column='[Calculation_0153173415247874]' derivation='None' name='[none:Calculation_0153173415247874:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column caption='Per Capita' datatype='real' name='[per_capita]' role='measure' type='quantitative' />
+            <column-instance column='[per_capita]' derivation='Sum' name='[sum:per_capita:qk]' pivot='key' type='quantitative' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1ja39a11u7ykt71050kxl1i4v24h].[none:year:qk]' included-values='in-range'>
+            <min>2022</min>
+            <max>2022</max>
+          </filter>
+          <slices>
+            <column>[federated.1ja39a11u7ykt71050kxl1i4v24h].[none:year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.1aejyu41i23du318qbijk1tp7z13].[none:Geographic Area Name:nk]' />
+              <lod column='[federated.1ja39a11u7ykt71050kxl1i4v24h].[none:Calculation_0153173415247874:qk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+          </pane>
+        </panes>
+        <rows>[federated.1aejyu41i23du318qbijk1tp7z13].[diff:sum:2022 Capital Expenditures for Industrial Robotic Equipment __($1000):qk]</rows>
+        <cols>[federated.1ja39a11u7ykt71050kxl1i4v24h].[sum:per_capita:qk]</cols>
+      </table>
+      <simple-id uuid='{D876ED53-3019-430C-A24C-86DC1FB5ED94}' />
+    </worksheet>
     <worksheet name='Per Capita by Longitude'>
       <layout-options>
         <title>
@@ -1516,6 +1686,126 @@
         <cols>[federated.1ja39a11u7ykt71050kxl1i4v24h].[Longitude (generated)]</cols>
       </table>
       <simple-id uuid='{08D1F581-13EC-4352-BB61-3F267DB90AAA}' />
+    </worksheet>
+    <worksheet name='Robotics Investment Per Worker'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Robotics Investment Per Worker</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='robotics_ce_by_state_2022_adjusted' name='federated.1pvby0l0aswnpa170m7do0fi0tgh' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1pvby0l0aswnpa170m7do0fi0tgh'>
+            <column caption='CE adjusted' datatype='real' name='[CE_adjusted]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[CE_adjusted]' derivation='Sum' name='[sum:CE_adjusted:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1pvby0l0aswnpa170m7do0fi0tgh].[Longitude (generated)]' field-type='quantitative' max='-6708389.9369451217' min='-15426931.54395606' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1pvby0l0aswnpa170m7do0fi0tgh].[Latitude (generated)]' field-type='quantitative' max='6590436.3809180446' min='2362310.9803598416' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <text column='[federated.1pvby0l0aswnpa170m7do0fi0tgh].[none:State:nk]' />
+              <color column='[federated.1pvby0l0aswnpa170m7do0fi0tgh].[sum:CE_adjusted:qk]' />
+              <geometry column='[federated.1pvby0l0aswnpa170m7do0fi0tgh].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1pvby0l0aswnpa170m7do0fi0tgh].[Latitude (generated)]</rows>
+        <cols>[federated.1pvby0l0aswnpa170m7do0fi0tgh].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{7337AB68-0AD1-4210-97F8-0EF1539D3E04}' />
+    </worksheet>
+    <worksheet name='Sheet 14'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='robotics_ce_by_state_2022' name='federated.1aejyu41i23du318qbijk1tp7z13' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1aejyu41i23du318qbijk1tp7z13'>
+            <column datatype='integer' name='[2022 Capital Expenditures for Industrial Robotic Equipment __($1000)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Geographic Area Name]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Geographic Area Name]' derivation='None' name='[none:Geographic Area Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[2022 Capital Expenditures for Industrial Robotic Equipment __($1000)]' derivation='Sum' name='[sum:2022 Capital Expenditures for Industrial Robotic Equipment __($1000):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.1aejyu41i23du318qbijk1tp7z13].[none:Geographic Area Name:nk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+          </pane>
+        </panes>
+        <rows>[federated.1aejyu41i23du318qbijk1tp7z13].[sum:2022 Capital Expenditures for Industrial Robotic Equipment __($1000):qk]</rows>
+        <cols>[federated.1aejyu41i23du318qbijk1tp7z13].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{4A1EA561-B867-4312-92C8-9DD7A8F608B0}' />
+    </worksheet>
+    <worksheet name='Sheet 17'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='robotics_ce_by_state_2022_adjusted' name='federated.1pvby0l0aswnpa170m7do0fi0tgh' />
+            <datasource caption='01_1yr_perc_change' name='federated.1f7qjfb0u5w65p1c1ci6205op8st' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1f7qjfb0u5w65p1c1ci6205op8st'>
+            <column caption='Perc Change' datatype='real' name='[perc_change]' role='measure' type='quantitative' />
+            <column-instance column='[perc_change]' derivation='Sum' name='[sum:perc_change:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1pvby0l0aswnpa170m7do0fi0tgh'>
+            <column caption='CE adjusted' datatype='real' name='[CE_adjusted]' role='measure' type='quantitative' />
+            <column-instance column='[CE_adjusted]' derivation='Sum' name='[sum:CE_adjusted:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1pvby0l0aswnpa170m7do0fi0tgh].[sum:CE_adjusted:qk]</rows>
+        <cols>[federated.1f7qjfb0u5w65p1c1ci6205op8st].[sum:perc_change:qk]</cols>
+      </table>
+      <simple-id uuid='{36A61FE8-4C66-4CBD-9DB1-D40D958212F9}' />
     </worksheet>
     <worksheet name='Sheet 2 (2)'>
       <layout-options>
@@ -1910,7 +2200,7 @@
       <simple-id uuid='{D4B0B482-87AF-4E74-B4DA-0D0A7D033472}' />
     </worksheet>
   </worksheets>
-  <windows source-height='135'>
+  <windows source-height='156'>
     <window class='worksheet' name='Total Employment in Manufacturing (2025)'>
       <cards>
         <edge name='left'>
@@ -1995,7 +2285,7 @@
       </cards>
       <simple-id uuid='{4662A6B6-16CC-4B52-9D2D-D1398205D5A0}' />
     </window>
-    <window class='worksheet' maximized='true' name='Total % Change in Employment'>
+    <window class='worksheet' name='Total % Change in Employment'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -2223,6 +2513,29 @@
       </cards>
       <simple-id uuid='{147D3D82-6896-4D68-AB11-99336577B443}' />
     </window>
+    <window class='worksheet' name='Investment by Employment (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{FAC2A239-DD51-45D6-B634-32A9A31D9FBC}' />
+    </window>
     <window class='worksheet' name='Change That Year'>
       <cards>
         <edge name='left'>
@@ -2245,6 +2558,80 @@
         </edge>
       </cards>
       <simple-id uuid='{16FA1BBB-ED86-472A-B262-3C58F565FAAF}' />
+    </window>
+    <window class='worksheet' name='Sheet 14'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{19628380-8B7C-4062-9561-518F104A109F}' />
+    </window>
+    <window class='worksheet' name='Robotics Investment Per Worker'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1pvby0l0aswnpa170m7do0fi0tgh].[sum:CE_adjusted:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4420CABF-4771-4723-A967-7E2F4E861020}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 17'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DF058D2D-BEF8-4DE6-8245-4D2CA4CA1B19}' />
     </window>
   </windows>
 </workbook>
