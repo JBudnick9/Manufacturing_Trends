@@ -1,4 +1,4 @@
-# Data Vis Project 1
+# Data Vis Project: Manufacturing Trends and Robotics Investment
 
 Data is in Data folder
 
