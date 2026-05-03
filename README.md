@@ -9,3 +9,6 @@ Python files are in src folder
 Tableau and Jupyter Notebooks are in workspace 
 
 PDF of Tableau visuals is in visuals folder 
+
+
+![Presentation](reports/Final_Presentation.gif)
