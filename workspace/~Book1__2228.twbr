@@ -1,0 +1,2250 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20261.26.0410.0924                               -->
+<workbook original-version='18.1' source-build='2026.1.1 (20261.26.0410.0924)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='01' inline='true' name='federated.0yj33fw0t3rv2m13f9c0t1swii2k' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='01' name='textscan.0oovjjh0ffh8b219dtz8m1rp4wym'>
+            <connection class='textscan' directory='C:/Users/student/Desktop/Manufacturing_Trends/data/bls.gov/employment/raw' filename='01.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0oovjjh0ffh8b219dtz8m1rp4wym' name='01.csv' table='[01#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator='&#9;'>
+            <column datatype='string' name='series_id' ordinal='0' />
+            <column datatype='string' name='state' ordinal='1' />
+            <column datatype='string' name='area' ordinal='2' />
+            <column datatype='integer' name='year' ordinal='3' />
+            <column datatype='string' name='period' ordinal='4' />
+            <column datatype='string' name='month' ordinal='5' />
+            <column datatype='real' name='value' ordinal='6' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[01.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;\\t&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>series_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[series_id]</local-name>
+            <parent-name>[01.csv]</parent-name>
+            <remote-alias>series_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[01.csv_23B96149512F4A4883917655129BDB39]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[state]</local-name>
+            <parent-name>[01.csv]</parent-name>
+            <remote-alias>state</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[01.csv_23B96149512F4A4883917655129BDB39]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>area</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[area]</local-name>
+            <parent-name>[01.csv]</parent-name>
+            <remote-alias>area</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[01.csv_23B96149512F4A4883917655129BDB39]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[01.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[01.csv_23B96149512F4A4883917655129BDB39]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>period</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[period]</local-name>
+            <parent-name>[01.csv]</parent-name>
+            <remote-alias>period</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[01.csv_23B96149512F4A4883917655129BDB39]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>month</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[month]</local-name>
+            <parent-name>[01.csv]</parent-name>
+            <remote-alias>month</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[01.csv_23B96149512F4A4883917655129BDB39]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>value</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[value]</local-name>
+            <parent-name>[01.csv]</parent-name>
+            <remote-alias>value</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[01.csv_23B96149512F4A4883917655129BDB39]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='01.csv' datatype='table' name='[__tableau_internal_object_id__].[01.csv_23B96149512F4A4883917655129BDB39]' role='measure' type='quantitative' />
+      <column caption='Area' datatype='string' name='[area]' role='dimension' type='nominal' />
+      <column caption='Month' datatype='string' name='[month]' role='dimension' type='nominal' />
+      <column caption='Period' datatype='string' name='[period]' role='dimension' type='nominal' />
+      <column caption='Series Id' datatype='string' name='[series_id]' role='dimension' type='nominal' />
+      <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Value' datatype='real' name='[value]' role='measure' type='quantitative' />
+      <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='01.csv' id='01.csv_23B96149512F4A4883917655129BDB39'>
+            <properties context=''>
+              <relation connection='textscan.0oovjjh0ffh8b219dtz8m1rp4wym' name='01.csv' table='[01#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator='&#9;'>
+                  <column datatype='string' name='series_id' ordinal='0' />
+                  <column datatype='string' name='state' ordinal='1' />
+                  <column datatype='string' name='area' ordinal='2' />
+                  <column datatype='integer' name='year' ordinal='3' />
+                  <column datatype='string' name='period' ordinal='4' />
+                  <column datatype='string' name='month' ordinal='5' />
+                  <column datatype='real' name='value' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='capital_expenditures_for_robotics' inline='true' name='federated.0y97ps01tem7hs1a13wej012la48' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='capital_expenditures_for_robotics' name='textscan.01hhjv81h8fvww1f2lr8p0a8lvh1'>
+            <connection class='textscan' directory='C:/Users/student/Desktop/Manufacturing_Trends/data/census.gov' filename='capital_expenditures_for_robotics.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.01hhjv81h8fvww1f2lr8p0a8lvh1' name='capital_expenditures_for_robotics.csv' table='[capital_expenditures_for_robotics#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='year' ordinal='0' />
+            <column datatype='integer' name='millions_of_dollars' ordinal='1' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[capital_expenditures_for_robotics.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[capital_expenditures_for_robotics.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[capital_expenditures_for_robotics.csv_F723D5AA471C447385804CD135F4DF92]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>millions_of_dollars</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[millions_of_dollars]</local-name>
+            <parent-name>[capital_expenditures_for_robotics.csv]</parent-name>
+            <remote-alias>millions_of_dollars</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[capital_expenditures_for_robotics.csv_F723D5AA471C447385804CD135F4DF92]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='capital_expenditures_for_robotics.csv' datatype='table' name='[__tableau_internal_object_id__].[capital_expenditures_for_robotics.csv_F723D5AA471C447385804CD135F4DF92]' role='measure' type='quantitative' />
+      <column caption='Millions Of Dollars' datatype='integer' name='[millions_of_dollars]' role='measure' type='quantitative' />
+      <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='capital_expenditures_for_robotics.csv' id='capital_expenditures_for_robotics.csv_F723D5AA471C447385804CD135F4DF92'>
+            <properties context=''>
+              <relation connection='textscan.01hhjv81h8fvww1f2lr8p0a8lvh1' name='capital_expenditures_for_robotics.csv' table='[capital_expenditures_for_robotics#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='year' ordinal='0' />
+                  <column datatype='integer' name='millions_of_dollars' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='01_5yr_perc_change' inline='true' name='federated.15jfqg002ij7u21287ljy0p8vcfq' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='01_5yr_perc_change' name='textscan.105amjm0vtmpl617dnls60u23iy3'>
+            <connection class='textscan' directory='C:/Users/student/Desktop/Manufacturing_Trends/data/bls.gov/employment/processed' filename='01_5yr_perc_change.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.105amjm0vtmpl617dnls60u23iy3' name='01_5yr_perc_change.csv' table='[01_5yr_perc_change#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='state' ordinal='1' />
+            <column datatype='string' name='area' ordinal='2' />
+            <column datatype='integer' name='old_year' ordinal='3' />
+            <column datatype='integer' name='new_year' ordinal='4' />
+            <column datatype='real' name='old_number' ordinal='5' />
+            <column datatype='real' name='new_number' ordinal='6' />
+            <column datatype='real' name='perc_change' ordinal='7' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[01_5yr_perc_change.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[01_5yr_perc_change.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[01_5yr_perc_change.csv_384DF61D5934462E9F1CC0954D134A92]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[state]</local-name>
+            <parent-name>[01_5yr_perc_change.csv]</parent-name>
+            <remote-alias>state</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[01_5yr_perc_change.csv_384DF61D5934462E9F1CC0954D134A92]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>area</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[area]</local-name>
+            <parent-name>[01_5yr_perc_change.csv]</parent-name>
+            <remote-alias>area</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[01_5yr_perc_change.csv_384DF61D5934462E9F1CC0954D134A92]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>old_year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[old_year]</local-name>
+            <parent-name>[01_5yr_perc_change.csv]</parent-name>
+            <remote-alias>old_year</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[01_5yr_perc_change.csv_384DF61D5934462E9F1CC0954D134A92]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>new_year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[new_year]</local-name>
+            <parent-name>[01_5yr_perc_change.csv]</parent-name>
+            <remote-alias>new_year</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[01_5yr_perc_change.csv_384DF61D5934462E9F1CC0954D134A92]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>old_number</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[old_number]</local-name>
+            <parent-name>[01_5yr_perc_change.csv]</parent-name>
+            <remote-alias>old_number</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[01_5yr_perc_change.csv_384DF61D5934462E9F1CC0954D134A92]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>new_number</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[new_number]</local-name>
+            <parent-name>[01_5yr_perc_change.csv]</parent-name>
+            <remote-alias>new_number</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[01_5yr_perc_change.csv_384DF61D5934462E9F1CC0954D134A92]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>perc_change</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[perc_change]</local-name>
+            <parent-name>[01_5yr_perc_change.csv]</parent-name>
+            <remote-alias>perc_change</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[01_5yr_perc_change.csv_384DF61D5934462E9F1CC0954D134A92]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='01_5yr_perc_change.csv' datatype='table' name='[__tableau_internal_object_id__].[01_5yr_perc_change.csv_384DF61D5934462E9F1CC0954D134A92]' role='measure' type='quantitative' />
+      <column caption='Area' datatype='string' name='[area]' role='dimension' type='nominal' />
+      <column caption='New Number' datatype='real' name='[new_number]' role='dimension' type='ordinal' />
+      <column caption='New Year' datatype='integer' name='[new_year]' role='dimension' type='quantitative' />
+      <column caption='Old Number' datatype='real' name='[old_number]' role='dimension' type='ordinal' />
+      <column caption='Old Year' datatype='integer' name='[old_year]' role='dimension' type='quantitative' />
+      <column caption='Perc Change' datatype='real' name='[perc_change]' role='measure' type='quantitative' />
+      <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='01_5yr_perc_change.csv' id='01_5yr_perc_change.csv_384DF61D5934462E9F1CC0954D134A92'>
+            <properties context=''>
+              <relation connection='textscan.105amjm0vtmpl617dnls60u23iy3' name='01_5yr_perc_change.csv' table='[01_5yr_perc_change#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='state' ordinal='1' />
+                  <column datatype='string' name='area' ordinal='2' />
+                  <column datatype='integer' name='old_year' ordinal='3' />
+                  <column datatype='integer' name='new_year' ordinal='4' />
+                  <column datatype='real' name='old_number' ordinal='5' />
+                  <column datatype='real' name='new_number' ordinal='6' />
+                  <column datatype='real' name='perc_change' ordinal='7' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='robotics_ce_by_state_2022' inline='true' name='federated.1aejyu41i23du318qbijk1tp7z13' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='robotics_ce_by_state_2022' name='textscan.180ujpu0qc2wyl1fwp4pc10bfyam'>
+            <connection class='textscan' directory='C:/Users/student/Desktop/Manufacturing_Trends/data/census.gov' filename='robotics_ce_by_state_2022.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.180ujpu0qc2wyl1fwp4pc10bfyam' name='robotics_ce_by_state_2022.csv' table='[robotics_ce_by_state_2022#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator='&#9;'>
+            <column datatype='string' name='Geographic Area Name' ordinal='0' />
+            <column datatype='integer' name='2022 Capital Expenditures for Industrial Robotic Equipment __($1000)' ordinal='1' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[robotics_ce_by_state_2022.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;\\t&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Geographic Area Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Geographic Area Name]</local-name>
+            <parent-name>[robotics_ce_by_state_2022.csv]</parent-name>
+            <remote-alias>Geographic Area Name</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[robotics_ce_by_state_2022.csv_371033997B9E42F69D2BA5B13751EC68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2022 Capital Expenditures for Industrial Robotic Equipment __($1000)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[2022 Capital Expenditures for Industrial Robotic Equipment __($1000)]</local-name>
+            <parent-name>[robotics_ce_by_state_2022.csv]</parent-name>
+            <remote-alias>2022 Capital Expenditures for Industrial Robotic Equipment __($1000)</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[robotics_ce_by_state_2022.csv_371033997B9E42F69D2BA5B13751EC68]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Geographic Area Name]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='robotics_ce_by_state_2022.csv' datatype='table' name='[__tableau_internal_object_id__].[robotics_ce_by_state_2022.csv_371033997B9E42F69D2BA5B13751EC68]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='robotics_ce_by_state_2022.csv' id='robotics_ce_by_state_2022.csv_371033997B9E42F69D2BA5B13751EC68'>
+            <properties context=''>
+              <relation connection='textscan.180ujpu0qc2wyl1fwp4pc10bfyam' name='robotics_ce_by_state_2022.csv' table='[robotics_ce_by_state_2022#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator='&#9;'>
+                  <column datatype='string' name='Geographic Area Name' ordinal='0' />
+                  <column datatype='integer' name='2022 Capital Expenditures for Industrial Robotic Equipment __($1000)' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='01_employment_per_capita_2020-2025' inline='true' name='federated.1ja39a11u7ykt71050kxl1i4v24h' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='01_employment_per_capita_2020-2025' name='textscan.0zaww0s14pjlw61go3dac0hjyebz'>
+            <connection class='textscan' directory='C:/Users/student/Desktop/Manufacturing_Trends/data/bls.gov/employment/processed' filename='01_employment_per_capita_2020-2025.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0zaww0s14pjlw61go3dac0hjyebz' name='01_employment_per_capita_2020-2025.csv' table='[01_employment_per_capita_2020-2025#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='series_id' ordinal='1' />
+            <column datatype='string' name='state' ordinal='2' />
+            <column datatype='string' name='area' ordinal='3' />
+            <column datatype='integer' name='year' ordinal='4' />
+            <column datatype='string' name='period' ordinal='5' />
+            <column datatype='string' name='month' ordinal='6' />
+            <column datatype='real' name='value' ordinal='7' />
+            <column datatype='real' name='per_capita' ordinal='8' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[01_employment_per_capita_2020-2025.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[01_employment_per_capita_2020-2025.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[01_employment_per_capita_2020-2025.csv_332DBDAD862C40AFB2612B35E97D38C0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>series_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[series_id]</local-name>
+            <parent-name>[01_employment_per_capita_2020-2025.csv]</parent-name>
+            <remote-alias>series_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[01_employment_per_capita_2020-2025.csv_332DBDAD862C40AFB2612B35E97D38C0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[state]</local-name>
+            <parent-name>[01_employment_per_capita_2020-2025.csv]</parent-name>
+            <remote-alias>state</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[01_employment_per_capita_2020-2025.csv_332DBDAD862C40AFB2612B35E97D38C0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>area</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[area]</local-name>
+            <parent-name>[01_employment_per_capita_2020-2025.csv]</parent-name>
+            <remote-alias>area</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[01_employment_per_capita_2020-2025.csv_332DBDAD862C40AFB2612B35E97D38C0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[01_employment_per_capita_2020-2025.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[01_employment_per_capita_2020-2025.csv_332DBDAD862C40AFB2612B35E97D38C0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>period</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[period]</local-name>
+            <parent-name>[01_employment_per_capita_2020-2025.csv]</parent-name>
+            <remote-alias>period</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[01_employment_per_capita_2020-2025.csv_332DBDAD862C40AFB2612B35E97D38C0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>month</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[month]</local-name>
+            <parent-name>[01_employment_per_capita_2020-2025.csv]</parent-name>
+            <remote-alias>month</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[01_employment_per_capita_2020-2025.csv_332DBDAD862C40AFB2612B35E97D38C0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>value</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[value]</local-name>
+            <parent-name>[01_employment_per_capita_2020-2025.csv]</parent-name>
+            <remote-alias>value</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[01_employment_per_capita_2020-2025.csv_332DBDAD862C40AFB2612B35E97D38C0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>per_capita</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[per_capita]</local-name>
+            <parent-name>[01_employment_per_capita_2020-2025.csv]</parent-name>
+            <remote-alias>per_capita</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[01_employment_per_capita_2020-2025.csv_332DBDAD862C40AFB2612B35E97D38C0]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='01_employment_per_capita_2020-2025.csv' datatype='table' name='[__tableau_internal_object_id__].[01_employment_per_capita_2020-2025.csv_332DBDAD862C40AFB2612B35E97D38C0]' role='measure' type='quantitative' />
+      <column caption='Area' datatype='string' name='[area]' role='dimension' type='nominal' />
+      <column caption='Month' datatype='string' name='[month]' role='dimension' type='nominal' />
+      <column caption='Per Capita' datatype='real' name='[per_capita]' role='measure' type='quantitative' />
+      <column caption='Period' datatype='string' name='[period]' role='dimension' type='nominal' />
+      <column caption='Series Id' datatype='string' name='[series_id]' role='dimension' type='nominal' />
+      <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Value' datatype='real' name='[value]' role='measure' type='quantitative' />
+      <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='01_employment_per_capita_2020-2025.csv' id='01_employment_per_capita_2020-2025.csv_332DBDAD862C40AFB2612B35E97D38C0'>
+            <properties context=''>
+              <relation connection='textscan.0zaww0s14pjlw61go3dac0hjyebz' name='01_employment_per_capita_2020-2025.csv' table='[01_employment_per_capita_2020-2025#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='series_id' ordinal='1' />
+                  <column datatype='string' name='state' ordinal='2' />
+                  <column datatype='string' name='area' ordinal='3' />
+                  <column datatype='integer' name='year' ordinal='4' />
+                  <column datatype='string' name='period' ordinal='5' />
+                  <column datatype='string' name='month' ordinal='6' />
+                  <column datatype='real' name='value' ordinal='7' />
+                  <column datatype='real' name='per_capita' ordinal='8' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='01_1yr_perc_change' inline='true' name='federated.1f7qjfb0u5w65p1c1ci6205op8st' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='01_1yr_perc_change' name='textscan.0k7z8q21u0s4j016pncpd0etmg1g'>
+            <connection class='textscan' directory='C:/Users/student/Desktop/Manufacturing_Trends/data/bls.gov/employment/processed' filename='01_1yr_perc_change.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0k7z8q21u0s4j016pncpd0etmg1g' name='01_1yr_perc_change.csv' table='[01_1yr_perc_change#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='state' ordinal='1' />
+            <column datatype='string' name='area' ordinal='2' />
+            <column datatype='integer' name='old_year' ordinal='3' />
+            <column datatype='integer' name='new_year' ordinal='4' />
+            <column datatype='real' name='old_number' ordinal='5' />
+            <column datatype='real' name='new_number' ordinal='6' />
+            <column datatype='real' name='perc_change' ordinal='7' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[01_1yr_perc_change.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[01_1yr_perc_change.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[state]</local-name>
+            <parent-name>[01_1yr_perc_change.csv]</parent-name>
+            <remote-alias>state</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>area</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[area]</local-name>
+            <parent-name>[01_1yr_perc_change.csv]</parent-name>
+            <remote-alias>area</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>old_year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[old_year]</local-name>
+            <parent-name>[01_1yr_perc_change.csv]</parent-name>
+            <remote-alias>old_year</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>new_year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[new_year]</local-name>
+            <parent-name>[01_1yr_perc_change.csv]</parent-name>
+            <remote-alias>new_year</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>old_number</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[old_number]</local-name>
+            <parent-name>[01_1yr_perc_change.csv]</parent-name>
+            <remote-alias>old_number</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>new_number</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[new_number]</local-name>
+            <parent-name>[01_1yr_perc_change.csv]</parent-name>
+            <remote-alias>new_number</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>perc_change</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[perc_change]</local-name>
+            <parent-name>[01_1yr_perc_change.csv]</parent-name>
+            <remote-alias>perc_change</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='01_1yr_perc_change.csv' datatype='table' name='[__tableau_internal_object_id__].[01_1yr_perc_change.csv_7B25AEE2F2A342F49C2FEFB8D6DEA604]' role='measure' type='quantitative' />
+      <column caption='Area' datatype='string' name='[area]' role='dimension' type='nominal' />
+      <column caption='New Number' datatype='real' name='[new_number]' role='dimension' type='ordinal' />
+      <column caption='New Year' datatype='integer' name='[new_year]' role='dimension' type='quantitative' />
+      <column caption='Old Number' datatype='real' name='[old_number]' role='dimension' type='ordinal' />
+      <column caption='Old Year' datatype='integer' name='[old_year]' role='dimension' type='quantitative' />
+      <column caption='Perc Change' datatype='real' name='[perc_change]' role='measure' type='quantitative' />
+      <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='01_1yr_perc_change.csv' id='01_1yr_perc_change.csv_7B25AEE2F2A342F49C2FEFB8D6DEA604'>
+            <properties context=''>
+              <relation connection='textscan.0k7z8q21u0s4j016pncpd0etmg1g' name='01_1yr_perc_change.csv' table='[01_1yr_perc_change#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='state' ordinal='1' />
+                  <column datatype='string' name='area' ordinal='2' />
+                  <column datatype='integer' name='old_year' ordinal='3' />
+                  <column datatype='integer' name='new_year' ordinal='4' />
+                  <column datatype='real' name='old_number' ordinal='5' />
+                  <column datatype='real' name='new_number' ordinal='6' />
+                  <column datatype='real' name='perc_change' ordinal='7' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <datasource-relationships>
+    <datasource-dependencies datasource='federated.0y97ps01tem7hs1a13wej012la48'>
+      <column-instance column='[year]' derivation='None' name='[none:year:ok]' pivot='key' type='ordinal' />
+      <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+    </datasource-dependencies>
+    <datasource-dependencies datasource='federated.0yj33fw0t3rv2m13f9c0t1swii2k'>
+      <column caption='Area' datatype='string' name='[area]' role='dimension' type='nominal' />
+      <column caption='Month' datatype='string' name='[month]' role='dimension' type='nominal' />
+      <column-instance column='[area]' derivation='None' name='[none:area:nk]' pivot='key' type='nominal' />
+      <column-instance column='[month]' derivation='None' name='[none:month:nk]' pivot='key' type='nominal' />
+      <column-instance column='[period]' derivation='None' name='[none:period:nk]' pivot='key' type='nominal' />
+      <column-instance column='[series_id]' derivation='None' name='[none:series_id:nk]' pivot='key' type='nominal' />
+      <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+      <column-instance column='[year]' derivation='None' name='[none:year:ok]' pivot='key' type='ordinal' />
+      <column caption='Period' datatype='string' name='[period]' role='dimension' type='nominal' />
+      <column caption='Series Id' datatype='string' name='[series_id]' role='dimension' type='nominal' />
+      <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+    </datasource-dependencies>
+    <datasource-dependencies datasource='federated.1aejyu41i23du318qbijk1tp7z13'>
+      <column datatype='string' name='[Geographic Area Name]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column-instance column='[Geographic Area Name]' derivation='None' name='[none:Geographic Area Name:nk]' pivot='key' type='nominal' />
+    </datasource-dependencies>
+    <datasource-dependencies datasource='federated.1f7qjfb0u5w65p1c1ci6205op8st'>
+      <column caption='New Year' datatype='integer' name='[new_year]' role='dimension' type='quantitative' />
+      <column-instance column='[new_year]' derivation='None' name='[none:new_year:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+      <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+    </datasource-dependencies>
+    <datasource-dependencies datasource='federated.1ja39a11u7ykt71050kxl1i4v24h'>
+      <column caption='Area' datatype='string' name='[area]' role='dimension' type='nominal' />
+      <column caption='Month' datatype='string' name='[month]' role='dimension' type='nominal' />
+      <column-instance column='[area]' derivation='None' name='[none:area:nk]' pivot='key' type='nominal' />
+      <column-instance column='[month]' derivation='None' name='[none:month:nk]' pivot='key' type='nominal' />
+      <column-instance column='[period]' derivation='None' name='[none:period:nk]' pivot='key' type='nominal' />
+      <column-instance column='[series_id]' derivation='None' name='[none:series_id:nk]' pivot='key' type='nominal' />
+      <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+      <column-instance column='[year]' derivation='None' name='[none:year:ok]' pivot='key' type='ordinal' />
+      <column caption='Period' datatype='string' name='[period]' role='dimension' type='nominal' />
+      <column caption='Series Id' datatype='string' name='[series_id]' role='dimension' type='nominal' />
+      <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+    </datasource-dependencies>
+    <datasource-relationship source='federated.1aejyu41i23du318qbijk1tp7z13' target='federated.0y97ps01tem7hs1a13wej012la48'>
+      <column-mapping />
+    </datasource-relationship>
+    <datasource-relationship source='federated.1f7qjfb0u5w65p1c1ci6205op8st' target='federated.0y97ps01tem7hs1a13wej012la48'>
+      <column-mapping>
+        <map key='[federated.1f7qjfb0u5w65p1c1ci6205op8st].[none:new_year:ok]' value='[federated.0y97ps01tem7hs1a13wej012la48].[none:year:ok]' />
+      </column-mapping>
+    </datasource-relationship>
+    <datasource-relationship source='federated.1ja39a11u7ykt71050kxl1i4v24h' target='federated.0yj33fw0t3rv2m13f9c0t1swii2k'>
+      <column-mapping>
+        <map key='[federated.1ja39a11u7ykt71050kxl1i4v24h].[none:area:nk]' value='[federated.0yj33fw0t3rv2m13f9c0t1swii2k].[none:area:nk]' />
+        <map key='[federated.1ja39a11u7ykt71050kxl1i4v24h].[none:month:nk]' value='[federated.0yj33fw0t3rv2m13f9c0t1swii2k].[none:month:nk]' />
+        <map key='[federated.1ja39a11u7ykt71050kxl1i4v24h].[none:period:nk]' value='[federated.0yj33fw0t3rv2m13f9c0t1swii2k].[none:period:nk]' />
+        <map key='[federated.1ja39a11u7ykt71050kxl1i4v24h].[none:series_id:nk]' value='[federated.0yj33fw0t3rv2m13f9c0t1swii2k].[none:series_id:nk]' />
+        <map key='[federated.1ja39a11u7ykt71050kxl1i4v24h].[none:state:nk]' value='[federated.0yj33fw0t3rv2m13f9c0t1swii2k].[none:state:nk]' />
+        <map key='[federated.1ja39a11u7ykt71050kxl1i4v24h].[none:year:ok]' value='[federated.0yj33fw0t3rv2m13f9c0t1swii2k].[none:year:ok]' />
+      </column-mapping>
+    </datasource-relationship>
+    <datasource-relationship source='federated.1aejyu41i23du318qbijk1tp7z13' target='federated.1f7qjfb0u5w65p1c1ci6205op8st'>
+      <column-mapping>
+        <map key='[federated.1aejyu41i23du318qbijk1tp7z13].[none:Geographic Area Name:nk]' value='[federated.1f7qjfb0u5w65p1c1ci6205op8st].[none:state:nk]' />
+      </column-mapping>
+    </datasource-relationship>
+    <datasource-relationship source='federated.1ja39a11u7ykt71050kxl1i4v24h' target='federated.1aejyu41i23du318qbijk1tp7z13'>
+      <column-mapping>
+        <map key='[federated.1ja39a11u7ykt71050kxl1i4v24h].[none:state:nk]' value='[federated.1aejyu41i23du318qbijk1tp7z13].[none:Geographic Area Name:nk]' />
+      </column-mapping>
+    </datasource-relationship>
+  </datasource-relationships>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='% Change by CE 2022'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Year Long Effect on Employment of 2022 Investment in Robotics By State</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='robotics_ce_by_state_2022' name='federated.1aejyu41i23du318qbijk1tp7z13' />
+            <datasource caption='01_1yr_perc_change' name='federated.1f7qjfb0u5w65p1c1ci6205op8st' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1aejyu41i23du318qbijk1tp7z13'>
+            <column datatype='integer' name='[2022 Capital Expenditures for Industrial Robotic Equipment __($1000)]' role='measure' type='quantitative' />
+            <column-instance column='[2022 Capital Expenditures for Industrial Robotic Equipment __($1000)]' derivation='Sum' name='[sum:2022 Capital Expenditures for Industrial Robotic Equipment __($1000):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1f7qjfb0u5w65p1c1ci6205op8st'>
+            <column-instance column='[old_year]' derivation='None' name='[none:old_year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column caption='Old Year' datatype='integer' name='[old_year]' role='dimension' type='quantitative' />
+            <column caption='Perc Change' datatype='real' name='[perc_change]' role='measure' type='quantitative' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[perc_change]' derivation='Sum' name='[sum:perc_change:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1f7qjfb0u5w65p1c1ci6205op8st].[none:old_year:qk]' included-values='in-range'>
+            <min>2022</min>
+            <max>2022</max>
+          </filter>
+          <slices>
+            <column>[federated.1f7qjfb0u5w65p1c1ci6205op8st].[none:old_year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.1f7qjfb0u5w65p1c1ci6205op8st].[none:state:nk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+          </pane>
+        </panes>
+        <rows>[federated.1f7qjfb0u5w65p1c1ci6205op8st].[sum:perc_change:qk]</rows>
+        <cols>[federated.1aejyu41i23du318qbijk1tp7z13].[sum:2022 Capital Expenditures for Industrial Robotic Equipment __($1000):qk]</cols>
+      </table>
+      <simple-id uuid='{6AB8C3FF-B5C3-454E-917C-8FC2E8129A50}' />
+    </worksheet>
+    <worksheet name='CE Vs Employed'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Capital Expenditure in Robotics Vs Total Employed</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='01' name='federated.0yj33fw0t3rv2m13f9c0t1swii2k' />
+            <datasource caption='capital_expenditures_for_robotics' name='federated.0y97ps01tem7hs1a13wej012la48' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0y97ps01tem7hs1a13wej012la48'>
+            <column caption='Millions Of Dollars' datatype='integer' name='[millions_of_dollars]' role='measure' type='quantitative' />
+            <column-instance column='[millions_of_dollars]' derivation='Sum' name='[sum:millions_of_dollars:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.0yj33fw0t3rv2m13f9c0t1swii2k'>
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[value]' derivation='Sum' name='[sum:value:qk]' pivot='key' type='quantitative' />
+            <column caption='Value' datatype='real' name='[value]' role='measure' type='quantitative' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0yj33fw0t3rv2m13f9c0t1swii2k].[sum:value:qk]' scope='cols' value='Total Employed' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.0yj33fw0t3rv2m13f9c0t1swii2k].[none:year:qk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-mode' value='range' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0y97ps01tem7hs1a13wej012la48].[sum:millions_of_dollars:qk]</rows>
+        <cols>[federated.0yj33fw0t3rv2m13f9c0t1swii2k].[sum:value:qk]</cols>
+      </table>
+      <simple-id uuid='{5D415090-FC8C-4A7D-8828-194FD3F02EBA}' />
+    </worksheet>
+    <worksheet name='Change That Year'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Investment to Employment Change Next Year</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='01_1yr_perc_change' name='federated.1f7qjfb0u5w65p1c1ci6205op8st' />
+            <datasource caption='capital_expenditures_for_robotics' name='federated.0y97ps01tem7hs1a13wej012la48' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0y97ps01tem7hs1a13wej012la48'>
+            <column caption='Millions Of Dollars' datatype='integer' name='[millions_of_dollars]' role='measure' type='quantitative' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[millions_of_dollars]' derivation='Sum' name='[sum:millions_of_dollars:qk]' pivot='key' type='quantitative' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1f7qjfb0u5w65p1c1ci6205op8st'>
+            <column caption='Perc Change' datatype='real' name='[perc_change]' role='measure' type='quantitative' />
+            <column-instance column='[perc_change]' derivation='Sum' name='[sum:perc_change:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.0y97ps01tem7hs1a13wej012la48].[none:year:qk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+          </pane>
+        </panes>
+        <rows>[federated.1f7qjfb0u5w65p1c1ci6205op8st].[sum:perc_change:qk]</rows>
+        <cols>[federated.0y97ps01tem7hs1a13wej012la48].[sum:millions_of_dollars:qk]</cols>
+      </table>
+      <simple-id uuid='{1C1C0EC6-47CB-4F18-879D-575078229F5A}' />
+    </worksheet>
+    <worksheet name='Dual Axis Over Time'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Total Employment Over Time</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='01' name='federated.0yj33fw0t3rv2m13f9c0t1swii2k' />
+            <datasource caption='capital_expenditures_for_robotics' name='federated.0y97ps01tem7hs1a13wej012la48' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0y97ps01tem7hs1a13wej012la48'>
+            <column caption='Millions Of Dollars' datatype='integer' name='[millions_of_dollars]' role='measure' type='quantitative' />
+            <column-instance column='[millions_of_dollars]' derivation='Sum' name='[sum:millions_of_dollars:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.0yj33fw0t3rv2m13f9c0t1swii2k'>
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[value]' derivation='Sum' name='[sum:value:qk]' pivot='key' type='quantitative' />
+            <column caption='Value' datatype='real' name='[value]' role='measure' type='quantitative' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0yj33fw0t3rv2m13f9c0t1swii2k].[none:year:qk]' field-type='quantitative' max='2026' min='2005' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0yj33fw0t3rv2m13f9c0t1swii2k].[sum:value:qk]' field-type='quantitative' max='174967.31701702255' min='-2169.1280882790816' range-type='fixed' scope='rows' type='space' />
+            <encoding attr='space' class='0' field='[federated.0y97ps01tem7hs1a13wej012la48].[sum:millions_of_dollars:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <color column='[federated.0yj33fw0t3rv2m13f9c0t1swii2k].[none:state:nk]' />
+              <color column='[federated.0yj33fw0t3rv2m13f9c0t1swii2k].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0yj33fw0t3rv2m13f9c0t1swii2k].[sum:value:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <color column='[federated.0yj33fw0t3rv2m13f9c0t1swii2k].[none:state:nk]' />
+              <color column='[federated.0yj33fw0t3rv2m13f9c0t1swii2k].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0y97ps01tem7hs1a13wej012la48].[sum:millions_of_dollars:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.0yj33fw0t3rv2m13f9c0t1swii2k].[none:state:nk]' />
+              <color column='[federated.0yj33fw0t3rv2m13f9c0t1swii2k].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.0yj33fw0t3rv2m13f9c0t1swii2k].[sum:value:qk] + [federated.0y97ps01tem7hs1a13wej012la48].[sum:millions_of_dollars:qk])</rows>
+        <cols>[federated.0yj33fw0t3rv2m13f9c0t1swii2k].[none:year:qk]</cols>
+        <annotations>
+          <annotation class='point' id='0' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run>Æ&#10;</run>
+              <run fontcolor='#757575'>Year: </run>
+              <run bold='true'><![CDATA[<[federated.0yj33fw0t3rv2m13f9c0t1swii2k].[none:year:qk]>]]></run>
+              <run>Æ&#10;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.0yj33fw0t3rv2m13f9c0t1swii2k].[none:year:qk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.0yj33fw0t3rv2m13f9c0t1swii2k].[sum:value:qk]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.0yj33fw0t3rv2m13f9c0t1swii2k].[none:state:nk]</field>
+                      <field>[federated.0yj33fw0t3rv2m13f9c0t1swii2k].[none:year:qk]</field>
+                      <field>[federated.0yj33fw0t3rv2m13f9c0t1swii2k].[sum:value:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;Alabama&quot;</value>
+                    <value>2008</value>
+                    <value>2081.1999999999994</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='130' y='-20' />
+          </annotation>
+          <annotation class='point' id='1' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run>Æ&#10;</run>
+              <run fontcolor='#757575'>Year: </run>
+              <run bold='true'><![CDATA[<[federated.0yj33fw0t3rv2m13f9c0t1swii2k].[none:year:qk]>]]></run>
+              <run>Æ&#10;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.0yj33fw0t3rv2m13f9c0t1swii2k].[none:year:qk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.0yj33fw0t3rv2m13f9c0t1swii2k].[sum:value:qk]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.0yj33fw0t3rv2m13f9c0t1swii2k].[none:state:nk]</field>
+                      <field>[federated.0yj33fw0t3rv2m13f9c0t1swii2k].[none:year:qk]</field>
+                      <field>[federated.0yj33fw0t3rv2m13f9c0t1swii2k].[sum:value:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;Alabama&quot;</value>
+                    <value>2019</value>
+                    <value>1996.1999999999994</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='107' y='-46' />
+          </annotation>
+        </annotations>
+      </table>
+      <simple-id uuid='{CF7FC525-53BA-4634-81AA-D37A84781C7B}' />
+    </worksheet>
+    <worksheet name='Eastward Growth'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Decline in Eastern Manufacturing</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='01_1yr_perc_change' name='federated.1f7qjfb0u5w65p1c1ci6205op8st' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1f7qjfb0u5w65p1c1ci6205op8st'>
+            <column-instance column='[perc_change]' derivation='Avg' name='[avg:perc_change:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column caption='Perc Change' datatype='real' name='[perc_change]' role='measure' type='quantitative' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.1f7qjfb0u5w65p1c1ci6205op8st].[none:state:nk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+          </pane>
+        </panes>
+        <rows>[federated.1f7qjfb0u5w65p1c1ci6205op8st].[avg:perc_change:qk]</rows>
+        <cols>[federated.1f7qjfb0u5w65p1c1ci6205op8st].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{E9D1E772-27D6-4378-AD36-26E7E3FD2A31}' />
+    </worksheet>
+    <worksheet name='Geo 2022 CE'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Capital Expenditure in Robotics by State 2022</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='robotics_ce_by_state_2022' name='federated.1aejyu41i23du318qbijk1tp7z13' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1aejyu41i23du318qbijk1tp7z13'>
+            <column datatype='integer' name='[2022 Capital Expenditures for Industrial Robotic Equipment __($1000)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Geographic Area Name]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Geographic Area Name]' derivation='None' name='[none:Geographic Area Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[2022 Capital Expenditures for Industrial Robotic Equipment __($1000)]' derivation='Sum' name='[sum:2022 Capital Expenditures for Industrial Robotic Equipment __($1000):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1aejyu41i23du318qbijk1tp7z13].[Longitude (generated)]' field-type='quantitative' max='-6772839.0918005677' min='-14196316.66589262' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1aejyu41i23du318qbijk1tp7z13].[Latitude (generated)]' field-type='quantitative' max='6829235.4577083942' min='2380668.153743851' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1aejyu41i23du318qbijk1tp7z13].[sum:2022 Capital Expenditures for Industrial Robotic Equipment __($1000):qk]' max='300000' type='interpolated' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1aejyu41i23du318qbijk1tp7z13].[none:Geographic Area Name:nk]' />
+              <color column='[federated.1aejyu41i23du318qbijk1tp7z13].[sum:2022 Capital Expenditures for Industrial Robotic Equipment __($1000):qk]' />
+              <geometry column='[federated.1aejyu41i23du318qbijk1tp7z13].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1aejyu41i23du318qbijk1tp7z13].[Latitude (generated)]</rows>
+        <cols>[federated.1aejyu41i23du318qbijk1tp7z13].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{9E526C86-239F-4B27-8B23-E72DAA312914}' />
+    </worksheet>
+    <worksheet name='Geo 2022 Per Capita'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='01_employment_per_capita_2020-2025' name='federated.1ja39a11u7ykt71050kxl1i4v24h' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1ja39a11u7ykt71050kxl1i4v24h'>
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column caption='Per Capita' datatype='real' name='[per_capita]' role='measure' type='quantitative' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[per_capita]' derivation='Sum' name='[sum:per_capita:qk]' pivot='key' type='quantitative' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1ja39a11u7ykt71050kxl1i4v24h].[none:year:qk]' included-values='in-range'>
+            <min>2022</min>
+            <max>2022</max>
+          </filter>
+          <slices>
+            <column>[federated.1ja39a11u7ykt71050kxl1i4v24h].[none:year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1ja39a11u7ykt71050kxl1i4v24h].[Longitude (generated)]' field-type='quantitative' max='-5880217.7705139704' min='-14857491.127294267' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1ja39a11u7ykt71050kxl1i4v24h].[Latitude (generated)]' field-type='quantitative' max='6820241.0494852168' min='1440551.4989837694' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.1ja39a11u7ykt71050kxl1i4v24h].[sum:per_capita:qk]' />
+              <text column='[federated.1ja39a11u7ykt71050kxl1i4v24h].[none:state:nk]' />
+              <geometry column='[federated.1ja39a11u7ykt71050kxl1i4v24h].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1ja39a11u7ykt71050kxl1i4v24h].[Latitude (generated)]</rows>
+        <cols>[federated.1ja39a11u7ykt71050kxl1i4v24h].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{E5DDBA48-D15F-4E03-B922-64C218DFA1A6}' />
+    </worksheet>
+    <worksheet name='Investment by Employment'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Investment by Employment</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='01_employment_per_capita_2020-2025' name='federated.1ja39a11u7ykt71050kxl1i4v24h' />
+            <datasource caption='robotics_ce_by_state_2022' name='federated.1aejyu41i23du318qbijk1tp7z13' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1aejyu41i23du318qbijk1tp7z13'>
+            <column datatype='integer' name='[2022 Capital Expenditures for Industrial Robotic Equipment __($1000)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Geographic Area Name]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Geographic Area Name]' derivation='None' name='[none:Geographic Area Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[2022 Capital Expenditures for Industrial Robotic Equipment __($1000)]' derivation='Sum' name='[sum:2022 Capital Expenditures for Industrial Robotic Equipment __($1000):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1ja39a11u7ykt71050kxl1i4v24h'>
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column caption='Per Capita' datatype='real' name='[per_capita]' role='measure' type='quantitative' />
+            <column-instance column='[per_capita]' derivation='Sum' name='[sum:per_capita:qk]' pivot='key' type='quantitative' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1ja39a11u7ykt71050kxl1i4v24h].[none:year:qk]' included-values='in-range'>
+            <min>2022</min>
+            <max>2022</max>
+          </filter>
+          <slices>
+            <column>[federated.1ja39a11u7ykt71050kxl1i4v24h].[none:year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.1aejyu41i23du318qbijk1tp7z13].[none:Geographic Area Name:nk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+          </pane>
+        </panes>
+        <rows>[federated.1aejyu41i23du318qbijk1tp7z13].[sum:2022 Capital Expenditures for Industrial Robotic Equipment __($1000):qk]</rows>
+        <cols>[federated.1ja39a11u7ykt71050kxl1i4v24h].[sum:per_capita:qk]</cols>
+      </table>
+      <simple-id uuid='{CF42F595-DC94-42C6-9CA1-CD243084C136}' />
+    </worksheet>
+    <worksheet name='Per Capita by Longitude'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Manufacturing is More Eastern</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='01_employment_per_capita_2020-2025' name='federated.1ja39a11u7ykt71050kxl1i4v24h' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ja39a11u7ykt71050kxl1i4v24h'>
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column caption='Per Capita' datatype='real' name='[per_capita]' role='measure' type='quantitative' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[per_capita]' derivation='Sum' name='[sum:per_capita:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.1ja39a11u7ykt71050kxl1i4v24h].[none:state:nk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+          </pane>
+        </panes>
+        <rows>[federated.1ja39a11u7ykt71050kxl1i4v24h].[sum:per_capita:qk]</rows>
+        <cols>[federated.1ja39a11u7ykt71050kxl1i4v24h].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{08D1F581-13EC-4352-BB61-3F267DB90AAA}' />
+    </worksheet>
+    <worksheet name='Sheet 2 (2)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Total Employment in Manufacturing (2007)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='01' name='federated.0yj33fw0t3rv2m13f9c0t1swii2k' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0yj33fw0t3rv2m13f9c0t1swii2k'>
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[value]' derivation='Sum' name='[sum:value:qk]' pivot='key' type='quantitative' />
+            <column caption='Value' datatype='real' name='[value]' role='measure' type='quantitative' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0yj33fw0t3rv2m13f9c0t1swii2k].[none:year:qk]' included-values='in-range'>
+            <min>2007</min>
+            <max>2007</max>
+          </filter>
+          <slices>
+            <column>[federated.0yj33fw0t3rv2m13f9c0t1swii2k].[none:year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0yj33fw0t3rv2m13f9c0t1swii2k].[Longitude (generated)]' field-type='quantitative' max='-6877604.8232517643' min='-14687217.913341714' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0yj33fw0t3rv2m13f9c0t1swii2k].[Latitude (generated)]' field-type='quantitative' max='6625761.6193847042' min='644939.27906461782' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0yj33fw0t3rv2m13f9c0t1swii2k].[none:state:nk]' />
+              <color column='[federated.0yj33fw0t3rv2m13f9c0t1swii2k].[sum:value:qk]' />
+              <geometry column='[federated.0yj33fw0t3rv2m13f9c0t1swii2k].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0yj33fw0t3rv2m13f9c0t1swii2k].[Latitude (generated)]</rows>
+        <cols>[federated.0yj33fw0t3rv2m13f9c0t1swii2k].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{8C076FCD-5F66-43B4-A92F-686BBD3B9B65}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Total Employment Over Time</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='01' name='federated.0yj33fw0t3rv2m13f9c0t1swii2k' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0yj33fw0t3rv2m13f9c0t1swii2k'>
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[value]' derivation='Sum' name='[sum:value:qk]' pivot='key' type='quantitative' />
+            <column caption='Value' datatype='real' name='[value]' role='measure' type='quantitative' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0yj33fw0t3rv2m13f9c0t1swii2k].[none:year:qk]' field-type='quantitative' max='2026' min='2005' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0yj33fw0t3rv2m13f9c0t1swii2k].[sum:value:qk]' field-type='quantitative' max='174967.31701702255' min='-2169.1280882790816' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <color column='[federated.0yj33fw0t3rv2m13f9c0t1swii2k].[none:state:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0yj33fw0t3rv2m13f9c0t1swii2k].[sum:value:qk]</rows>
+        <cols>[federated.0yj33fw0t3rv2m13f9c0t1swii2k].[none:year:qk]</cols>
+        <annotations>
+          <annotation class='point' id='0' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run>Æ&#10;</run>
+              <run fontcolor='#757575'>Year: </run>
+              <run bold='true'><![CDATA[<[federated.0yj33fw0t3rv2m13f9c0t1swii2k].[none:year:qk]>]]></run>
+              <run>Æ&#10;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.0yj33fw0t3rv2m13f9c0t1swii2k].[none:year:qk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.0yj33fw0t3rv2m13f9c0t1swii2k].[sum:value:qk]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.0yj33fw0t3rv2m13f9c0t1swii2k].[none:state:nk]</field>
+                      <field>[federated.0yj33fw0t3rv2m13f9c0t1swii2k].[none:year:qk]</field>
+                      <field>[federated.0yj33fw0t3rv2m13f9c0t1swii2k].[sum:value:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;Alabama&quot;</value>
+                    <value>2008</value>
+                    <value>2081.1999999999994</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='130' y='-20' />
+          </annotation>
+          <annotation class='point' id='1' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run>Æ&#10;</run>
+              <run fontcolor='#757575'>Year: </run>
+              <run bold='true'><![CDATA[<[federated.0yj33fw0t3rv2m13f9c0t1swii2k].[none:year:qk]>]]></run>
+              <run>Æ&#10;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.0yj33fw0t3rv2m13f9c0t1swii2k].[none:year:qk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.0yj33fw0t3rv2m13f9c0t1swii2k].[sum:value:qk]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.0yj33fw0t3rv2m13f9c0t1swii2k].[none:state:nk]</field>
+                      <field>[federated.0yj33fw0t3rv2m13f9c0t1swii2k].[none:year:qk]</field>
+                      <field>[federated.0yj33fw0t3rv2m13f9c0t1swii2k].[sum:value:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;Alabama&quot;</value>
+                    <value>2019</value>
+                    <value>1996.1999999999994</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='107' y='-46' />
+          </annotation>
+        </annotations>
+      </table>
+      <simple-id uuid='{F07DCE76-9CBD-4CFF-8F4C-885B1977E85A}' />
+    </worksheet>
+    <worksheet name='Total % Change in Employment'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Total Percent Change from 2010-2025</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='01_5yr_perc_change' name='federated.15jfqg002ij7u21287ljy0p8vcfq' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.15jfqg002ij7u21287ljy0p8vcfq'>
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column caption='Perc Change' datatype='real' name='[perc_change]' role='measure' type='quantitative' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[perc_change]' derivation='Sum' name='[sum:perc_change:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.15jfqg002ij7u21287ljy0p8vcfq].[Longitude (generated)]' field-type='quantitative' max='33015931.799815074' min='25498779.386963908' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.15jfqg002ij7u21287ljy0p8vcfq].[Latitude (generated)]' field-type='quantitative' max='6353128.3025344806' min='596280.61139573238' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <text column='[federated.15jfqg002ij7u21287ljy0p8vcfq].[none:state:nk]' />
+              <color column='[federated.15jfqg002ij7u21287ljy0p8vcfq].[sum:perc_change:qk]' />
+              <geometry column='[federated.15jfqg002ij7u21287ljy0p8vcfq].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.15jfqg002ij7u21287ljy0p8vcfq].[Latitude (generated)]</rows>
+        <cols>[federated.15jfqg002ij7u21287ljy0p8vcfq].[Longitude (generated)]</cols>
+        <annotations>
+          <annotation class='point' id='1' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run fontcolor='#757575'>State: </run>
+              <run bold='true'><![CDATA[<[federated.15jfqg002ij7u21287ljy0p8vcfq].[none:state:nk]>]]></run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#757575'>Perc Change: </run>
+              <run bold='true'><![CDATA[<[federated.15jfqg002ij7u21287ljy0p8vcfq].[sum:perc_change:qk]>]]></run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.15jfqg002ij7u21287ljy0p8vcfq].[Longitude (generated)]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.15jfqg002ij7u21287ljy0p8vcfq].[Latitude (generated)]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.15jfqg002ij7u21287ljy0p8vcfq].[none:state:nk]</field>
+                      <field>[federated.15jfqg002ij7u21287ljy0p8vcfq].[sum:perc_change:qk]</field>
+                      <field>[federated.15jfqg002ij7u21287ljy0p8vcfq].[Geometry (generated)]</field>
+                      <field>[federated.15jfqg002ij7u21287ljy0p8vcfq].[Latitude (generated)]</field>
+                      <field>[federated.15jfqg002ij7u21287ljy0p8vcfq].[Longitude (generated)]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;Florida&quot;</value>
+                    <value>6.7299453105146974</value>
+                    <value>&quot;MULTIPOLYGON(((-87.4483 30.5131,-87.4087 30.5837,-87.3942 30.6417,-87.407 30.6752,-87.5303 30.7414,-87.5449 30.7783,-87.6005 30.8206,-87.6349 30.8659,-87.5891 30.9636,-87.5989 30.9975,-87.1626 30.9991,-86.7859 30.997,-86.6883 30.9945,-86.035 30.9933,-85.4983 30.9969,-85.2436 31.0009,-85.0024 31.0007,-84.9836 30.936,-84.9425 30.8885,-84.9257 30.8438,-84.9368 30.8185,-84.9111 30.7512,-84.8647 30.7115,-84.3807 30.69,-84.0075 30.6721,-83.3571 30.6373,-82.4598 30.5843,-82.2147 30.5685,-82.2403 30.538,-82.2012 30.4852,-82.2108 30.4255,-82.1653 30.3578,-82.1051 30.3688,-82.0499 30.3624,-82.0373 30.3717,-82.04 30.4367,-82.0169 30.4751,-82.0055 30.5634,-82.0484 30.6542,-82.0368 30.7544,-82.0237 30.7833,-81.981 30.777,-81.9639 30.8181,-81.9049 30.8283,-81.8828 30.8008,-81.7685 30.777,-81.7192 30.7446,-81.5387 30.7087,-81.4986 30.7247,-81.4255 30.701,-81.4508 30.5192,-81.4054 30.4326,-81.4375 30.3957,-81.3916 30.3973,-81.3798 30.2529,-81.3037 29.9521,-81.3071 29.8296,-81.213 29.6707,-81.1019 29.4271,-80.9843 29.1817,-80.7328 28.7912,-80.5749 28.5852,-80.5251 28.4595,-80.6041 28.4198,-80.5871 28.5752,-80.6631 28.4095,-80.6957 28.4078,-80.6611 28.2582,-80.7186 28.4037,-80.7299 28.6082,-80.7876 28.6278,-80.7413 28.7145,-80.6367 28.6599,-80.7385 28.7912,-80.7945 28.8698,-80.7883 28.7911,-80.8505 28.7911,-80.8163 28.6256,-80.7492 28.4086,-80.6742 28.234,-80.4911 27.8546,-80.3769 27.6569,-80.3562 27.5572,-80.3174 27.4311,-80.2335 27.263,-80.2851 27.231,-80.2854 27.2106,-80.1576 27.163,-80.0804 26.9705,-80.0365 26.8121,-80.0748 26.3211,-80.1181 25.9752,-80.171 25.8678,-80.189 25.7582,-80.2333 25.7309,-80.3407 25.4989,-80.3104 25.3725,-80.4245 25.2363,-80.3911 25.1923,-80.3542 25.2033,-80.3343 25.2403,-80.3326 25.2857,-80.2679 25.3309,-80.2809 25.2951,-80.3677 25.1673,-80.3716 25.1369,-80.3998 25.1085,-80.4287 25.1152,-80.4618 25.1606,-80.4428 25.1852,-80.466 25.212,-80.4953 25.1995,-80.6049 25.2027,-80.7415 25.1425,-80.8582 25.1766,-80.922 25.1423,-81.0833 25.1162,-81.1699 25.2199,-81.1273 25.3314,-81.0206 25.2184,-80.9305 25.2102,-80.9009 25.2485,-80.9613 25.3317,-81.0388 25.3339,-81.15 25.3884,-81.1669 25.4718,-81.2791 25.6899,-81.2241 25.7206,-81.2938 25.8038,-81.3439 25.8033,-81.5208 25.9122,-81.6523 25.9345,-81.7261 25.9842,-81.8013 26.094,-81.8703 26.458,-81.9203 26.4419,-82.0109 26.5117,-81.9677 26.5377,-82.0321 26.5276,-82.0817 26.6661,-82.0611 26.7704,-82.0845 26.9279,-82.2553 27.0053,-82.2553 26.999,-82.184 26.9368,-82.148 26.7959,-82.2382 26.8095,-82.3545 26.946,-82.4379 27.0547,-82.5664 27.3891,-82.6888 27.4674,-82.6745 27.5196,-82.556 27.5788,-82.5538 27.6454,-82.3857 27.8195,-82.4591 27.9415,-82.4729 27.8222,-82.5412 27.845,-82.549 27.963,-82.6485 28.0178,-82.7211 27.9364,-82.597 27.865,-82.6546 27.7003,-82.8333 27.8355,-82.8488 27.8784,-82.7957 27.9899,-82.7855 28.1726,-82.7276 28.2721,-82.6764 28.4335,-82.6653 28.4336,-82.6337 28.6944,-82.6538 28.8308,-82.6321 28.8796,-82.6898 28.9061,-82.7556 29.0019,-82.8053 29.0868,-82.8032 29.1713,-83.0161 29.1687,-83.0678 29.1905,-83.1108 29.3246,-83.0486 29.3791,-83.1633 29.3085,-83.2147 29.416,-83.2712 29.4304,-83.4039 29.542,-83.3846 29.6693,-83.4832 29.6881,-83.585 29.7604,-83.6393 29.8874,-83.7875 29.983,-83.8287 29.9829,-83.989 30.0771,-83.9834 30.1077,-84.0761 30.0966,-84.1568 30.0727,-84.2688 30.1042,-84.3607 30.0614,-84.3418 29.9702,-84.4388 29.9774,-84.3369 29.9442,-84.3524 29.9,-84.4556 29.9288,-84.5373 29.9094,-84.7545 29.7886,-84.9025 29.7354,-84.9175 29.7836,-84.9787 29.7252,-85.2182 29.6937,-85.3134 29.6859,-85.3024 29.8076,-85.3884 29.9241,-85.6863 30.1189,-85.6192 30.1235,-85.4668 30.0154,-85.3913 30.0255,-85.3911 30.0368,-85.4839 30.0341,-85.4942 30.0906,-85.7331 30.185,-85.6504 30.278,-85.7246 30.2395,-85.7631 30.2999,-85.8519 30.2827,-85.7436 30.2167,-85.7458 30.1425,-85.9961 30.2693,-86.2967 30.3624,-86.3973 30.3787,-86.5073 30.3813,-86.4887 30.4174,-86.3969 30.3983,-86.2403 30.3916,-86.248 30.4287,-86.1188 30.377,-86.1216 30.4302,-86.2546 30.4868,-86.3946 30.4541,-86.4524 30.5085,-86.6051 30.4013,-86.7993 30.4061,-87.1441 30.3689,-87.0172 30.4029,-86.9367 30.4542,-87.0209 30.505,-87.1021 30.4449,-87.1007 30.5202,-87.1505 30.5755,-87.1948 30.5489,-87.1609 30.515,-87.1784 30.4237,-87.2822 30.3731,-87.2672 30.344,-87.4732 30.3143,-87.4143 30.3473,-87.4233 30.4025,-87.3452 30.4237,-87.4483 30.5131),(-80.4375 25.1967,-80.4541 25.1535,-80.4043 25.1387,-80.384 25.1677,-80.4111 25.1917,-80.4431 25.2443,-80.463 25.2187,-80.4375 25.1967),(-81.6308 29.6882,-81.5771 29.7192,-81.5748 29.7295,-81.6308 29.6882),(-81.5748 29.7295,-81.5259 29.7597,-81.589 29.8901,-81.5561 29.9677,-81.6689 30.0597,-81.6017 30.1306,-81.6588 30.1316,-81.623 30.2318,-81.6641 30.2775,-81.6124 30.3195,-81.6124 30.3899,-81.474 30.3945,-81.5322 30.4177,-81.6354 30.3947,-81.6294 30.3187,-81.7067 30.2868,-81.6619 30.238,-81.6912 30.1912,-81.692 30.008,-81.6119 29.9634,-81.6061 29.8396,-81.563 29.7822,-81.5748 29.7295),(-81.6308 29.6882,-81.652 29.676,-81.6138 29.5978,-81.683 29.5917,-81.612 29.5923,-81.6308 29.6882),(-81.6833 29.5877,-81.6942 29.4394,-81.6686 29.3717,-81.6419 29.277,-81.5722 29.2035,-81.5243 29.2252,-81.5736 29.3487,-81.6803 29.4364,-81.6833 29.5877),(-81.9434 26.5522,-81.8994 26.5787,-81.8374 26.6936,-81.9172 26.6294,-81.9434 26.5522)),((-80.6313 28.409,-80.588 28.4081,-80.6081 28.3113,-80.5604 28.078,-80.6124 28.169,-80.6089 28.3855,-80.6313 28.409)),((-81.277 29.9045,-81.2504 29.7598,-81.3003 29.8303,-81.277 29.9045)),((-81.2956 25.8019,-81.3049 25.6986,-81.3645 25.7717,-81.2956 25.8019)),((-81.3926 24.7435,-81.3905 24.7322,-81.3491 24.7033,-81.3695 24.6637,-81.4008 24.7221,-81.3926 24.7435)),((-81.4034 24.6666,-81.4163 24.6939,-81.4254 24.6883,-81.4342 24.7091,-81.454 24.722,-81.4499 24.7458,-81.4195 24.6933,-81.4095 24.6999,-81.4034 24.6666)),((-81.5058 24.7015,-81.4785 24.6816,-81.497 24.6652,-81.5213 24.6704,-81.5058 24.7015)),((-81.6756 24.604,-81.6684 24.5692,-81.6851 24.5587,-81.7188 24.5586,-81.6756 24.604)),((-81.7389 24.5897,-81.7337 24.5582,-81.7846 24.5472,-81.7984 24.5647,-81.7507 24.5726,-81.7389 24.5897)),((-82.1551 26.7021,-82.0655 26.6114,-82.0618 26.4935,-82.0939 26.4937,-82.1551 26.7021)),((-85.1146 29.689,-85.1416 29.6327,-85.2018 29.6824,-85.1146 29.689)),((-86.9195 30.3747,-86.8 30.3929,-86.8003 30.3869,-86.9195 30.3747)))&quot;</value>
+                    <value>28.420000000000002</value>
+                    <value>-81.549999999999997</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='130' y='-20' />
+          </annotation>
+          <annotation class='point' id='2' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run fontcolor='#757575'>State: </run>
+              <run bold='true'><![CDATA[<[federated.15jfqg002ij7u21287ljy0p8vcfq].[none:state:nk]>]]></run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#757575'>Perc Change: </run>
+              <run bold='true'><![CDATA[<[federated.15jfqg002ij7u21287ljy0p8vcfq].[sum:perc_change:qk]>]]></run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.15jfqg002ij7u21287ljy0p8vcfq].[Longitude (generated)]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.15jfqg002ij7u21287ljy0p8vcfq].[Latitude (generated)]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.15jfqg002ij7u21287ljy0p8vcfq].[none:state:nk]</field>
+                      <field>[federated.15jfqg002ij7u21287ljy0p8vcfq].[sum:perc_change:qk]</field>
+                      <field>[federated.15jfqg002ij7u21287ljy0p8vcfq].[Geometry (generated)]</field>
+                      <field>[federated.15jfqg002ij7u21287ljy0p8vcfq].[Latitude (generated)]</field>
+                      <field>[federated.15jfqg002ij7u21287ljy0p8vcfq].[Longitude (generated)]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;New York&quot;</value>
+                    <value>-2.3691230284030054</value>
+                    <value>&quot;MULTIPOLYGON(((-73.9529 40.7389,-73.9524 40.7396,-73.9571 40.7396,-73.9608 40.7381,-73.9627 40.7388,-73.9605 40.7436,-73.957 40.7489,-73.9345 40.7715,-73.9098 40.7909,-73.7467 40.7804,-73.7297 40.8666,-73.5654 40.9153,-73.497 40.9234,-73.3912 40.939,-73.3304 40.93,-73.2192 40.9079,-73.1124 40.9701,-72.7741 40.9653,-72.6304 40.9831,-72.3016 41.1422,-72.3206 41.11,-72.238 41.0488,-72.165 41.0375,-72.0951 41.0033,-71.937 41.0784,-71.8561 41.0711,-71.9637 41.0251,-72.4315 40.857,-72.6368 40.795,-72.8689 40.7395,-73.0172 40.7502,-73.1678 40.6985,-73.2254 40.7188,-73.2875 40.6848,-73.4249 40.6619,-73.5758 40.5764,-73.7542 40.5842,-73.9405 40.5417,-73.9418 40.5547,-73.7574 40.612,-73.7667 40.6204,-73.7744 40.6246,-73.8583 40.6526,-73.8793 40.5804,-74.002 40.5714,-74.0411 40.63,-74.0096 40.6689,-74.0196 40.6794,-73.9944 40.7044,-73.9793 40.7058,-73.9742 40.7016,-73.9609 40.725,-73.9621 40.7339,-73.9586 40.7382,-73.9529 40.7389)),((-79.7619 42.2695,-79.4535 42.4112,-79.4075 42.4522,-79.2449 42.5332,-79.1352 42.5687,-79.0472 42.6913,-78.9184 42.7366,-78.8543 42.7838,-78.906 42.9105,-78.9196 42.9472,-79.012 42.9853,-79.0218 43.0143,-79.0074 43.0657,-79.0767 43.0804,-79.0704 43.1209,-79.0431 43.1392,-79.0638 43.2595,-78.6389 43.3571,-78.4655 43.3714,-78.1028 43.3755,-77.9956 43.3651,-77.7551 43.3368,-77.5774 43.2432,-77.3747 43.2762,-77.1466 43.29,-76.9426 43.2741,-76.7225 43.3437,-76.7168 43.3159,-76.617 43.4182,-76.4163 43.5216,-76.2307 43.5314,-76.1831 43.6793,-76.1999 43.6802,-76.2308 43.807,-76.2968 43.8566,-76.1272 43.8979,-76.1388 43.9415,-76.05 44.0049,-76.1689 43.959,-76.1415 44.0706,-76.2457 44.0648,-76.2817 44.0108,-76.2011 44.0229,-76.2545 43.9668,-76.3601 44.0709,-76.3655 44.11,-76.1641 44.2174,-76.0893 44.2325,-75.988 44.2915,-76.0246 44.3387,-75.9701 44.3425,-75.9128 44.3678,-75.8214 44.432,-75.8076 44.4717,-75.7669 44.5153,-75.6183 44.6196,-75.5049 44.7054,-75.3699 44.7829,-75.2847 44.8484,-75.1649 44.8935,-75.1347 44.915,-75.0647 44.9294,-74.9725 44.9835,-74.908 44.9835,-74.8875 45.0001,-74.8265 45.0159,-74.7603 44.995,-74.6686 45.0044,-74.6637 44.9996,-74.4575 44.997,-74.3352 44.9919,-74.1502 44.9914,-73.8746 45.0012,-73.6397 45.0035,-73.3431 45.0108,-73.3386 44.9194,-73.3562 44.9045,-73.3795 44.838,-73.335 44.8041,-73.3638 44.7453,-73.3697 44.6635,-73.3898 44.6172,-73.3615 44.5636,-73.3386 44.5468,-73.3067 44.5003,-73.2937 44.4382,-73.3336 44.3723,-73.3133 44.2641,-73.3634 44.2077,-73.3906 44.1911,-73.4379 44.0451,-73.4104 44.0265,-73.4089 43.9345,-73.3743 43.8743,-73.3893 43.8312,-73.3513 43.7698,-73.4052 43.6884,-73.4279 43.6344,-73.4286 43.584,-73.3981 43.5681,-73.3719 43.6245,-73.3026 43.6257,-73.2973 43.5797,-73.2586 43.5649,-73.2468 43.5258,-73.2546 43.3147,-73.2743 42.9437,-73.2787 42.8334,-73.2909 42.8019,-73.265 42.7459,-73.3525 42.51,-73.5081 42.0863,-73.4873 42.0496,-73.5181 41.6668,-73.551 41.2954,-73.4827 41.2128,-73.7278 41.1007,-73.6545 41.0113,-73.6587 40.9934,-73.6864 40.9454,-73.7929 40.8834,-73.7981 40.8167,-73.9158 40.7975,-73.9226 40.8022,-73.9087 40.8717,-73.9106 40.9153,-73.8662 41.0717,-73.8755 41.188,-73.9636 41.2484,-73.9595 41.1937,-73.9067 41.1421,-73.9025 40.9973,-74.2133 41.134,-74.3659 41.2029,-74.4576 41.2482,-74.6949 41.3574,-74.7547 41.425,-74.7904 41.4217,-74.8121 41.443,-74.8962 41.4402,-74.8909 41.4562,-74.9418 41.4835,-74.9816 41.4799,-74.9876 41.5087,-75.0697 41.602,-75.0442 41.618,-75.0532 41.7517,-75.1023 41.7865,-75.0757 41.7997,-75.1464 41.8509,-75.204 41.8699,-75.2578 41.8622,-75.2937 41.9546,-75.3103 41.949,-75.3596 41.9994,-75.7611 41.9978,-76.1468 41.9988,-76.9271 42.0017,-77.1247 41.9994,-77.7499 41.9988,-78.2066 41.9996,-78.9188 41.9981,-79.0612 41.9993,-79.7613 41.9988,-79.7619 42.2695)),((-73.9264 40.8772,-73.9291 40.7966,-73.9717 40.7445,-73.974 40.7322,-73.9708 40.7284,-73.9774 40.7102,-73.9975 40.7086,-74.0133 40.7013,-74.0163 40.702,-74.0191 40.7055,-74.0076 40.7543,-73.9264 40.8772)),((-74.0853 40.6489,-74.0523 40.5998,-74.1051 40.5532,-74.2486 40.4962,-74.2022 40.6309,-74.0853 40.6489)))&quot;</value>
+                    <value>43.0</value>
+                    <value>-75.489999999999995</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='130' y='-20' />
+          </annotation>
+        </annotations>
+      </table>
+      <simple-id uuid='{6FAB1A19-DC0B-4D42-BC50-96EAB0BB6B9A}' />
+    </worksheet>
+    <worksheet name='Total Employment in Manufacturing (2025)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Total Employment in Manufacturing (2025)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='01' name='federated.0yj33fw0t3rv2m13f9c0t1swii2k' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0yj33fw0t3rv2m13f9c0t1swii2k'>
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[value]' derivation='Sum' name='[sum:value:qk]' pivot='key' type='quantitative' />
+            <column caption='Value' datatype='real' name='[value]' role='measure' type='quantitative' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0yj33fw0t3rv2m13f9c0t1swii2k].[none:year:qk]' included-values='in-range'>
+            <min>2025</min>
+            <max>2025</max>
+          </filter>
+          <slices>
+            <column>[federated.0yj33fw0t3rv2m13f9c0t1swii2k].[none:year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0yj33fw0t3rv2m13f9c0t1swii2k].[Longitude (generated)]' field-type='quantitative' max='-6877604.8232517643' min='-14687217.913341714' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0yj33fw0t3rv2m13f9c0t1swii2k].[Latitude (generated)]' field-type='quantitative' max='6625761.6193847042' min='644939.27906461782' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0yj33fw0t3rv2m13f9c0t1swii2k].[none:state:nk]' />
+              <color column='[federated.0yj33fw0t3rv2m13f9c0t1swii2k].[sum:value:qk]' />
+              <geometry column='[federated.0yj33fw0t3rv2m13f9c0t1swii2k].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0yj33fw0t3rv2m13f9c0t1swii2k].[Latitude (generated)]</rows>
+        <cols>[federated.0yj33fw0t3rv2m13f9c0t1swii2k].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{D4B0B482-87AF-4E74-B4DA-0D0A7D033472}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='135'>
+    <window class='worksheet' name='Total Employment in Manufacturing (2025)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='3' param='[federated.0yj33fw0t3rv2m13f9c0t1swii2k].[sum:value:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BDB50618-373F-4701-9628-5F60341A6173}' />
+    </window>
+    <window class='worksheet' name='Sheet 2 (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='3' param='[federated.0yj33fw0t3rv2m13f9c0t1swii2k].[sum:value:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A395B8CC-40B0-4E44-8C3B-6FE60B8B8E98}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0yj33fw0t3rv2m13f9c0t1swii2k].[none:state:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4662A6B6-16CC-4B52-9D2D-D1398205D5A0}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Total % Change in Employment'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.15jfqg002ij7u21287ljy0p8vcfq].[sum:perc_change:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9875A4FB-C8A3-4CA1-A103-0A03018FB027}' />
+    </window>
+    <window class='worksheet' name='Dual Axis Over Time'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.0yj33fw0t3rv2m13f9c0t1swii2k].[none:state:nk]&#10;[federated.0yj33fw0t3rv2m13f9c0t1swii2k].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C2943A40-8D01-4D97-AA98-6527EC8004DD}' />
+    </window>
+    <window class='worksheet' name='Geo 2022 Per Capita'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1ja39a11u7ykt71050kxl1i4v24h].[none:year:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card pane-specification-id='0' param='[federated.1ja39a11u7ykt71050kxl1i4v24h].[sum:per_capita:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A935386E-FBB0-429B-954E-3A305742013A}' />
+    </window>
+    <window class='worksheet' name='CE Vs Employed'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DB287C20-7495-4013-B300-CC8F8F32BC81}' />
+    </window>
+    <window class='worksheet' name='Geo 2022 CE'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1aejyu41i23du318qbijk1tp7z13].[sum:2022 Capital Expenditures for Industrial Robotic Equipment __($1000):qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{038D89D2-D576-4FC9-8888-7C639D24CC54}' />
+    </window>
+    <window class='worksheet' name='Eastward Growth'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6BBAB621-A553-4638-8FB1-156CBA2BE56F}' />
+    </window>
+    <window class='worksheet' name='Per Capita by Longitude'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5A451B9A-B223-421E-A118-2C02FEFDD9D1}' />
+    </window>
+    <window class='worksheet' name='% Change by CE 2022'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E4F655FB-466C-45FF-B424-54275A6F39EE}' />
+    </window>
+    <window class='worksheet' name='Investment by Employment'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{147D3D82-6896-4D68-AB11-99336577B443}' />
+    </window>
+    <window class='worksheet' name='Change That Year'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{16FA1BBB-ED86-472A-B262-3C58F565FAAF}' />
+    </window>
+  </windows>
+</workbook>
